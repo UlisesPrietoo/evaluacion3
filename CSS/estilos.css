@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: white !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #f8d25a !important;
+}
+
+main p {
+  max-width: 600px;
+  margin: 0 auto;
+}

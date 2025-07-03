@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingresar Empleado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/estilos.css" />
+</head>
+<body>
+  <header class="bg-primary text-white text-center py-4">
+    <h1 class="fw-bold">Ingresar Empleado</h1>
+    <p class="mb-0">Formulario de ingreso al sistema</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="eliminar.html">Eliminar</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="actualizar.html">Actualizar</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="listar.html">Listar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form id="formEmpleado" novalidate>
+          <div class="mb-3">
+            <label for="rut" class="form-label">RUT</label>
+            <input type="text" class="form-control" id="rut" required />
+          </div>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required />
+          </div>
+          <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido" required />
+          </div>
+          <div class="mb-3">
+            <label for="sueldo" class="form-label">Sueldo</label>
+            <input type="number" class="form-control" id="sueldo" min="1" required />
+          </div>
+          <div id="mensaje" class="text-center fw-bold mb-3"></div>
+          <button type="submit" class="btn btn-success w-100">Agregar Empleado</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="fw-bold mb-1">Sistema CRUD de Empleados - Evaluación 3</p>
+      <p class="mb-0">© 2025 Desarrollado por Vicente Vásquez</p>
+    </div>
+  </footer>
+
+  <script src="JS/crear.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listar Empleados</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/estilos.css" />
+</head>
+<body>
+  <header class="bg-primary text-white text-center py-4">
+    <h1 class="fw-bold">Lista de Empleados</h1>
+    <p class="mb-0">Listado con todos los empleados registrados</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="crear.html">Ingresar</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="eliminar.html">Eliminar</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="actualizar.html">Actualizar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div id="mensajeListado" class="text-center fw-bold mb-4"></div>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped align-middle text-center">
+        <thead class="table-dark">
+          <tr>
+            <th>RUT</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Sueldo</th>
+          </tr>
+        </thead>
+        <tbody id="tablaEmpleados"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="fw-bold mb-1">Sistema CRUD de Empleados - Evaluación 3</p>
+      <p class="mb-0">© 2025 Desarrollado por Vicente Vásquez</p>
+    </div>
+  </footer>
+
+  <script src="JS/listar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
